@@ -17,7 +17,7 @@ class SuggestionItem extends Component {
         <img
           className="arrow-image"
           src="https://assets.ccbp.in/frontend/react-js/diagonal-arrow-left-up.png"
-          alt="arrow icon"
+          alt="arrow"
         />
       </li>
     )

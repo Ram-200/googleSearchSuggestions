@@ -25,24 +25,26 @@ class GoogleSuggestions extends Component {
           <img
             src="https://assets.ccbp.in/frontend/react-js/google-logo.png"
             className="google-img"
+            alt="google logo"
           />
           <div className="search-container">
             <div className="input-search-container">
               <img
                 src="https://assets.ccbp.in/frontend/react-js/google-search-icon.png"
                 className=""
-                alt="search-logo"
+                alt="search icon"
               />
               <input
                 type="search"
                 placeholder="Search Google"
+                value={searchInput}
                 onChange={this.onChangeInputSearch}
               />
             </div>
             <ul>
               {searchResult.map(eachItem => (
                 <SuggestionItem
-                  key={eachItem.key}
+                  key={eachItem.id}
                   updateSearchInput={this.updateSearchInput}
                   searchInfo={eachItem}
                 />
